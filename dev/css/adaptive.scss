@@ -18,6 +18,17 @@
     @include span(11 last);
   }
 
+  .about__header {
+    // @include span(12);
+    width: span(12);
+    text-align: center;
+  }
+
+  .about__descr {
+    @include span(9 last);
+    margin-left: span(2) + gutter();
+  }
+
 }
 
 @include phones { ///phones

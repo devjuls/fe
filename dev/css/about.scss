@@ -1,0 +1,67 @@
+///section About
+
+.about {
+  margin-bottom: 80px;
+}
+
+.about__header {
+  @include span(3);
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-title__first {
+  color: $blue;
+}
+
+.section-title__second {
+  color: $orange;
+}
+
+.section-title__add {
+  color: $grey;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about__descr {
+  @include span(8 last);
+  padding-top: 50px;
+
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+
+  &:before {
+    width: 6px;
+    height: 60px;
+    content: "";
+    background: $blue;
+    transform: skewX(-20deg);
+    position: absolute;
+    top: 35px;
+    left: -50px;
+  }
+
+    &:after {
+      width: 2px;
+      height: 90px;
+      content: "";
+      background: $orange;
+      padding-left: 2px;
+      padding-top: 10px;
+      background-clip: content-box;
+      border-left: 2px solid $blue;
+
+      transform: skewX(-20deg);
+      position: absolute;
+      top: 10px;
+      left: -62px;
+    }
+}

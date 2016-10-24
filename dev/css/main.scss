@@ -1,0 +1,47 @@
+/*vars*/
+$container-width: 960px;
+$footer-height: 125px;
+
+$susy: (columns: 12,
+  gutters: 0.1,
+  math: fluid,
+  output: float,
+  container: 960px,
+  // gutter-position: split,
+
+  debug: (
+    image: show-columns,
+    color: rgba(#66f, .25), // менять цвет у колонок
+    output: overlay, // есть еще вариант overlay, в котором колонки показываются только при наведении
+    toggle: top right, // положение переключателя для показа оверлея
+  ),
+);
+
+$tablets-layout: layout(6 .2 fluid float);
+
+/*colors*/
+$bg-color: #eee;
+
+
+
+/*layout*/
+@import "_adjust/fonts.scss";
+@import "../bower/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+@import "_adjust/mixins.scss";
+@import "_adjust/adjustment.scss";
+@import "susy";
+@import "header.scss";
+@import "about.scss";
+@import "adaptive.scss";
+
+
+
+
+
+
+
+
+
+
+

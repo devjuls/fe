@@ -1,0 +1,83 @@
+//////header
+
+.main-header {
+  background: url("../images/main.jpg") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.container {
+  @include container();
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-bar {
+  @include full;
+  margin-bottom: 100px;
+}
+
+.logo {
+  @include span(1);
+}
+
+.logo__img {
+  max-width: 100%;
+}
+
+.nav {
+  @include span(7 last);
+  padding-top: 20px;
+  padding-left: 35px;
+}
+
+.nav__list {
+  @extend %clearfix;
+}
+
+.nav__list li {
+  @include span (1 of 5 split);
+  text-align: center;
+}
+
+.slogan {
+  @include full();
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo-big {
+  width: span(2);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.promo-text{
+  width: span(10);
+  margin: 0 auto;
+
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 120px;
+  clear: both;
+}
+
+.scroll {
+  width: span(1);
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.scroll__content {
+  width: 45px;
+  height: 68px;
+    margin: 0 auto;
+  background: url("../images/decor/scroll.png") center center no-repeat;
+}

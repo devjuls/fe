@@ -1,0 +1,52 @@
+///adaptive
+
+@include laptop { ///laptops
+
+  .container {
+    width: 100%;
+  }
+
+  .nav {
+    @include span(10 last);
+  }
+
+}
+
+@include tablets { ///tablets
+
+  .nav {
+    @include span(11 last);
+  }
+
+}
+
+@include phones { ///phones
+
+  .logo {
+    @include span(2 of 12);
+  }
+
+  .nav {
+    @include span(10 last);
+    padding-top: 0;
+  }
+
+  .nav li{
+    @include gallery(6 of 12 after);
+    margin-bottom: gutter(6);
+  }
+
+  .top-bar {
+    margin-bottom: 40px;
+  }
+
+  .slogan, .logo-big {
+    margin-bottom: 30px;
+  }
+
+  .promo-text {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+}

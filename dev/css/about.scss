@@ -4,38 +4,39 @@
   margin-bottom: 80px;
 }
 
-.about__header {
+.section__header {
+  @extend %clearfix;
+  margin-bottom: 70px;
+}
+
+.section__title-wrap {
   @include span(3);
 }
 
-.section-title {
+.section__title {
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.section-title__first {
+.section__title-first {
   color: $blue;
 }
 
-.section-title__second {
+.section__title-second {
   color: $orange;
 }
 
-.section-title__add {
+.section__title-add {
   color: $grey;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
 }
 
-.about__descr {
+.section__descr {
   @include span(8 last);
   padding-top: 50px;
-
-  color: $grey;
-  font-size: 16px;
-  font-weight: 400;
   position: relative;
 
   &:before {
@@ -65,3 +66,50 @@
       left: -62px;
     }
 }
+
+.main-text {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section__subtitle {
+  @include full;
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.section__text {
+  width: span(8);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skills__list {
+  @extend %clearfix;
+}
+
+.skills__item {
+  @include gallery(3);
+}
+
+.skills__title {
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skills__descr {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+

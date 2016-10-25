@@ -96,6 +96,7 @@
 
 .skills__item {
   @include gallery(3);
+  margin-bottom: gutter()*4;
 }
 
 .skills__title {

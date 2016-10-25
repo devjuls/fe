@@ -10,6 +10,10 @@
     @include span(10 last);
   }
 
+  .skills__item {
+    @include gallery(6);
+  }
+
 }
 
 @include tablets { ///tablets
@@ -18,13 +22,13 @@
     @include span(11 last);
   }
 
-  .about__header {
+  .section__title-wrap {
     // @include span(12);
     width: span(12);
     text-align: center;
   }
 
-  .about__descr {
+  .section__descr {
     @include span(9 last);
     margin-left: span(2) + gutter();
   }
@@ -58,6 +62,21 @@
   .promo-text {
     font-size: 17px;
     margin-bottom: 40px;
+  }
+
+  .section__descr {
+    &:before {
+      top: 45px;
+    }
+    &:after {
+      top: 20px;
+    }
+  }
+
+  .skills__item {
+    @include span(10);
+    margin-left: span(1) !important;
+    margin-right: 0 !important;
   }
 
 }

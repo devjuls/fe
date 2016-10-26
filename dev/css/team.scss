@@ -10,21 +10,77 @@
   .section__title-second, .section__title-add, .section__descr {
     color: #fff;
   }
+
+  .section__header {
+    margin-bottom: 120px;
+  }
 }
 
 .team__list {
   @extend %clearfix;
+  padding-bottom: 150px;
 }
 
 .team__item {
   @include gallery(3);
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: gutter()*4;
 }
 
 .team__item-photo {
 
+  margin-bottom: 20px;
+  position: relative;
+
   img {
     max-width: 100%;
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.2;
+    }
   }
+
 }
+
+.team__item-photo-wrap {
+      border-radius: 50%;
+
+        &:hover {
+    .team__item-contacts {
+      display: block;
+    }
+}
+}
+
+.team__item-contacts {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.team__item-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team__item-position {
+  font-size: 12px;
+  font-weight: 400;
+  color: $blue;
+  margin-bottom: 10px;
+}
+
+.team__item-descr {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+

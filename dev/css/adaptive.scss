@@ -10,6 +10,10 @@
     @include span(10 last);
   }
 
+  .about {
+    margin-bottom: 0;
+  }
+
   .skills__item {
     @include gallery(6);
   }
@@ -18,10 +22,8 @@
     bottom: 150px;
   }
 
-  .team {
-    .tilted {
-      bottom: 160px;
-    }
+  .team__item {
+    @include gallery(6);
   }
 
 }
@@ -44,7 +46,7 @@
   }
 
   .tilted {
-    bottom: 130px;
+    bottom: 140px;
   }
 
 }
@@ -94,14 +96,19 @@
   }
 
   .tilted {
-    bottom: 100px;
+    bottom: 120px;
   }
 
   .team {
     .tilted {
-      bottom: 130px;
+      bottom: 180px;
     }
   }
 
+  .team__item {
+    @include span(10);
+    margin-left: span(1) !important;
+    margin-right: 0 !important;
+  }
 
 }

@@ -1,0 +1,30 @@
+///section Team
+
+.team {
+  background: url("../images/team-bg.png") center top no-repeat;
+  background-size: cover;
+  padding-top: 210px;
+  min-height: 1080px;
+  position: relative;
+
+  .section__title-second, .section__title-add, .section__descr {
+    color: #fff;
+  }
+}
+
+.team__list {
+  @extend %clearfix;
+}
+
+.team__item {
+  @include gallery(3);
+  text-align: center;
+}
+
+.team__item-photo {
+
+  img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+}

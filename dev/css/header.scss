@@ -1,11 +1,26 @@
 //////header
 
+body {
+  max-width: 1450px;
+}
+
 .main-header {
-  background: url("../images/main.jpg") center center no-repeat;
+  background: url("../images/main2.png") center center no-repeat;
   background-size: cover;
   color: #fff;
   padding-top: 25px;
   margin-bottom: 110px;
+  position: relative;
+  min-height: 1000px;
+}
+
+.tilted {
+  width: 100%;
+  height: 300px;
+  @include tilted(6deg, $color: $blue);
+  z-index: -1;
+  position: absolute;
+  bottom: 170px;
 }
 
 .container {

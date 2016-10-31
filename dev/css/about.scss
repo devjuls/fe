@@ -114,3 +114,43 @@
   text-align: center;
 }
 
+.skills__diagram {
+  width: 145px;
+  height: 145px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.diagram-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.circle {
+  fill: transparent;
+  stroke: #eaeaea;
+  stroke-width: 5;
+/*       stroke-dasharray: 101 100; */
+}
+
+.circle-diagrams {
+  fill: transparent;
+  stroke: $blue;
+  stroke-width: 5;
+}
+
+.skills__diagram svg {
+  width: 150px; height: 150px;
+  transform: rotate(-70deg);
+  background: transperent;
+  border-radius: 50%;
+}
+

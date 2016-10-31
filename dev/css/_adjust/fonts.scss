@@ -1,9 +1,9 @@
-// @font-face {
-//   font-family: 'Malina';
-//   src: url('../fonts/Malina/Malina.eot') format('eot'),
-//     url('../fonts/Malina/ALSMalina.svg') format('svg'),
-//     url('../fonts/Malina/ALSMalina.woff') format('woff'),
-//     url('../fonts/Malina/ALSMalina.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome/fontawesome-webfont.ttf') format("truetype"),
+         url('../fonts/FontAwesome/fontawesome-webfont.eot') format("eot"),
+         url('../fonts/FontAwesome/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/FontAwesome/fontawesome-webfont.ttf') format('ttf'),
+         url('../fonts/FontAwesome/fontawesome-webfont.svg') format('svg');
+    font-weight: 400;
+}

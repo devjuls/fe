@@ -30,39 +30,32 @@
 }
 
 .team__item-photo {
-
   margin-bottom: 20px;
   position: relative;
+}
 
-  img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
+.team__item-image {
+  max-width: 100%;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-      opacity: 0.2;
-    }
+  &.active {
+    opacity: 0.1;
   }
-
-}
-
-.team__item-photo-wrap {
-      border-radius: 50%;
-
-        &:hover {
-    .team__item-contacts {
-      display: block;
-    }
-}
 }
 
 .team__item-contacts {
   position: absolute;
-  top: 70px;
+  top: 80px;
   left: 0;
   right: 0;
   display: none;
+
+  &.active {
+    cursor: pointer;
+    display: block;
+  }
 }
 
 .team__item-name {
@@ -83,4 +76,50 @@
   font-weight: 400;
   color: #fff;
 }
+
+.item-contacts__elem {
+  display: inline-block;
+
+  a:before {
+    display: inline-block;
+    color: #b1afad;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'FontAwesome';
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: color .3s
+  }
+
+  a:hover {
+    &:before{
+      color: $blue;
+    }
+  }
+}
+
+.item-contacts__elem_fb {
+  a:before {
+    content: "\f09a";
+  }
+}
+
+.item-contacts__elem_tw {
+  a:before {
+    content: "\f099";
+  }
+}
+
+.item-contacts__elem_in {
+  a:before {
+    content: "\f0e1";
+  }
+}
+
+.item-contacts__elem_be {
+  a:before {
+    content: "\f1b4";
+  }
+}
+
 

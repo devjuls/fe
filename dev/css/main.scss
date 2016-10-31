@@ -32,9 +32,12 @@ $orange: #f90;
 @import "_adjust/fonts.scss";
 @import "../bower/normalize.css/normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+@import "additional/font-awesome.css";
 @import "_adjust/mixins.scss";
 @import "_adjust/adjustment.scss";
 @import "susy";
+
+/*styles*/
 @import "header.scss";
 @import "about.scss";
 @import "team.scss";

@@ -1,6 +1,6 @@
 ///adaptive
 
-@include laptop { ///laptops
+@include laptop { ///laptops 992
 
   .container {
     width: 100%;
@@ -26,9 +26,15 @@
     @include gallery(6);
   }
 
+  .services__item {
+    @include span(8);
+    margin-left: span(2) !important;
+    margin-right: 0 !important;
+  }
+
 }
 
-@include tablets { ///tablets
+@include tablets { ///tablets 768
 
   .nav {
     @include span(11 last);
@@ -49,9 +55,20 @@
     bottom: 140px;
   }
 
+  .services__item {
+    @include span(9);
+    margin-left: span(2) !important;
+    margin-right: 0 !important;
+  }
+
+  .facts__item {
+    @include gallery(6);
+    margin-bottom: gutter()*6;
+  }
+
 }
 
-@include phones { ///phones
+@include phones { ///phones 568
 
   .logo {
     @include span(2 of 12);
@@ -111,4 +128,39 @@
     margin-right: 0 !important;
   }
 
+  .services__item {
+    @include span(11);
+    margin-left: span(1) !important;
+    margin-right: 0 !important;
+  }
+}
+
+@include xs-phones { ///xs-phones 480
+  .services__icon {
+    @include span(2 of 6);
+    margin-left: span(2 of 6) !important;
+    margin-right: 0 !important;
+    margin-bottom: gutter()*2;
+    height: 90px;
+
+    &:after {
+      font-size: 60px;
+    }
+  }
+
+  .services__info {
+    @include span(10);
+    margin-left: span(1) !important;
+    margin-right: 0 !important;
+  }
+
+  .services__title, .services__descr {
+    text-align: center;
+  }
+
+  .facts__item {
+    @include span(9);
+    margin-left: span(2) !important;
+    margin-right: 0 !important;
+  }
 }

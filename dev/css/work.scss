@@ -1,3 +1,36 @@
-.work   {
+.work {
   margin-bottom: 100px;
 }
+
+.work__list {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  @extend %clearfix;
+  @include nested(18);
+}
+
+.work__item {
+  // display: inline-block;
+  // width: 30%;
+  // margin-right: 2%;
+  border: 1px solid #000;
+
+  // &:nth-child(4) {
+  //   width: 62%;
+  // }
+  @include span(6 of 18);
+
+    &:nth-child(3) {
+      @include last;
+    }
+
+    &:nth-child(4) {
+      width: span(12 of 18);
+    }
+
+    &:nth-child(5) {
+      @include last;
+    }
+}
+

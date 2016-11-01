@@ -5,6 +5,7 @@ $footer-height: 125px;
 $susy: (columns: 12,
   gutters: 0.25,
   math: fluid,
+  global-box-sizing: border-box,
   output: float,
   container: 960px,
   // gutter-position: split,

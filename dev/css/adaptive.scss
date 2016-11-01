@@ -7,7 +7,7 @@
   }
 
   .nav {
-    @include span(10 last);
+    width: span(9);
   }
 
   .about {
@@ -16,6 +16,7 @@
 
   .skills__item {
     @include gallery(6);
+    margin-bottom: gutter()*4;
   }
 
   .tilted {
@@ -27,8 +28,8 @@
   }
 
   .services__item {
-    @include span(8);
-    margin-left: span(2) !important;
+    width: span(8);
+    margin-left: span(2 wide) !important;
     margin-right: 0 !important;
   }
 
@@ -37,18 +38,16 @@
 @include tablets { ///tablets 768
 
   .nav {
-    @include span(11 last);
+    width: span(11);
   }
 
   .section__title-wrap {
-    // @include span(12);
     width: span(12);
     text-align: center;
   }
 
   .section__descr {
-    @include span(9 last);
-    margin-left: span(2) + gutter();
+    width: span(9);
   }
 
   .tilted {
@@ -56,8 +55,8 @@
   }
 
   .services__item {
-    @include span(9);
-    margin-left: span(2) !important;
+    width: span(9);
+    margin-left: span(2 wide) !important;
     margin-right: 0 !important;
   }
 
@@ -71,17 +70,17 @@
 @include phones { ///phones 568
 
   .logo {
-    @include span(2 of 12);
+    width: span(2);
   }
 
   .nav {
-    @include span(10 last);
+    width: span(10);
     padding-top: 0;
   }
 
   .nav li{
-    @include gallery(6 of 12 after);
-    margin-bottom: gutter(6);
+    @include gallery(6);
+    margin-bottom: gutter();
   }
 
   .top-bar {
@@ -108,7 +107,7 @@
 
   .skills__item {
     @include span(10);
-    margin-left: span(1) !important;
+    margin-left: span(1 wide) !important;
     margin-right: 0 !important;
   }
 
@@ -124,7 +123,7 @@
 
   .team__item {
     @include span(10);
-    margin-left: span(1) !important;
+    margin-left: span(1 wide) !important;
     margin-right: 0 !important;
   }
 
@@ -137,7 +136,7 @@
 
 @include xs-phones { ///xs-phones 480
   .services__icon {
-    @include span(2 of 6);
+    @include span(2 of 6 wide);
     margin-left: span(2 of 6) !important;
     margin-right: 0 !important;
     margin-bottom: gutter()*2;
@@ -150,7 +149,7 @@
 
   .services__info {
     @include span(10);
-    margin-left: span(1) !important;
+    margin-left: span(1 wide) !important;
     margin-right: 0 !important;
   }
 
@@ -160,7 +159,7 @@
 
   .facts__item {
     @include span(9);
-    margin-left: span(2) !important;
+    margin-left: span(2 wide) !important;
     margin-right: 0 !important;
   }
 }

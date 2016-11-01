@@ -6,13 +6,11 @@ body {
 
 .main-header {
 
-
   color: #fff;
   padding-top: 25px;
   margin-bottom: 110px;
   position: relative;
   min-height: 1080px;
-
 
   &:after {
     position: absolute;
@@ -32,9 +30,8 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-    position: relative;
-
-
+  position: relative;
+  min-height: 1080px;
 }
 
 .tilted {

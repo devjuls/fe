@@ -1,14 +1,34 @@
 ///adaptive
 
+@include desktop { ///desktop 1200
+
+  .work__info {
+    font-size: 1em;
+  }
+
+
+
+
+
+}
+
+
+
 @include laptop { ///laptops 992
 
   .container {
     width: 100%;
   }
 
+
+  //header
+
   .nav {
     width: span(9);
   }
+
+
+  //about
 
   .about {
     margin-bottom: 0;
@@ -23,23 +43,51 @@
     bottom: 150px;
   }
 
+
+  //team
+
   .team__item {
     @include gallery(6);
   }
 
+
+  //services
+
+  .services__list {
+    margin-left: span(2 wide);
+  }
+
   .services__item {
-    width: span(8);
-    margin-left: span(2 wide) !important;
-    margin-right: 0 !important;
+    @include gallery (8 of 10);
+
+    &:nth-child(n) {
+      clear: both;
+    }
+  }
+
+
+  //work
+
+  .work__descr {
+    font-size: 0.8em;
+  }
+
+  .work__link {
+    font-size: 1em;
   }
 
 }
 
 @include tablets { ///tablets 768
 
+  //header
+
   .nav {
     width: span(11);
   }
+
+
+  //about
 
   .section__title-wrap {
     width: span(12);
@@ -54,10 +102,19 @@
     bottom: 140px;
   }
 
+
+  //services
+
+  .services__list {
+    margin-left: span(2 wide);
+  }
+
   .services__item {
-    width: span(9);
-    margin-left: span(2 wide) !important;
-    margin-right: 0 !important;
+    @include gallery (9 of 10);
+
+    &:nth-child(n) {
+      clear: both;
+    }
   }
 
   .facts__item {
@@ -65,9 +122,26 @@
     margin-bottom: gutter()*6;
   }
 
+  //work
+
+  .work__descr {
+    display: none;
+  }
+
+  .work__title {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .work__link {
+    font-size: 1em;
+  }
+
 }
 
 @include phones { ///phones 568
+
+  //header
 
   .logo {
     width: span(2);
@@ -96,6 +170,9 @@
     margin-bottom: 40px;
   }
 
+
+  //about
+
   .section__descr {
     &:before {
       top: 45px;
@@ -105,15 +182,20 @@
     }
   }
 
+  .skills__list {
+    margin-left: span(1 wide);
+  }
+
   .skills__item {
-    @include span(10);
-    margin-left: span(1 wide) !important;
-    margin-right: 0 !important;
+    @include gallery(10 of 11);
   }
 
   .tilted {
     bottom: 120px;
   }
+
+
+  //team
 
   .team {
     .tilted {
@@ -121,21 +203,53 @@
     }
   }
 
-  .team__item {
+  .team__list {
     @include span(10);
-    margin-left: span(1 wide) !important;
-    margin-right: 0 !important;
+    margin-left: span(1 wide);
+  }
+
+  .team__item {
+    @include gallery (10 of 10);
+
+    &:nth-child(n) {
+      clear: both;
+    }
+  }
+
+
+  //services
+
+  .services__list {
+    margin-left: span(1 wide);
   }
 
   .services__item {
-    @include span(11);
-    margin-left: span(1) !important;
-    margin-right: 0 !important;
+    @include gallery (11 of 11);
+
+    &:nth-child(n) {
+      clear: both;
+    }
   }
+
+  //work
+
+  .work__title {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .work__link {
+    font-size: 0.8em;
+  }
+
 }
 
 @include xs-phones { ///xs-phones 480
+
+  //services
+
   .services__icon {
+
     @include span(2 of 6 wide);
     margin-left: span(2 of 6) !important;
     margin-right: 0 !important;
@@ -158,8 +272,34 @@
   }
 
   .facts__item {
-    @include span(9);
-    margin-left: span(2 wide) !important;
-    margin-right: 0 !important;
+    @include gallery(12 of 12);
+
+    &:nth-child(n) {
+      clear: both;
+    }
   }
+
+
+  //work
+
+  .work__title {
+    display: none;
+  }
+
+  .work__link {
+    font-size: 1em;
+  }
+
+
+  //socials
+
+  .socials__descr {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .socials__follow {
+    font-size: 20px;
+  }
+
 }

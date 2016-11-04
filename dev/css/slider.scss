@@ -1,0 +1,149 @@
+.slideshow-wrap {
+  display: block;
+  min-height: 360px;
+  width: span(10);
+  margin: auto;
+  position: relative;
+}
+
+.slideshow-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow-list {
+  list-style: none;
+  height: 100%;
+  width: 500%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+
+  &>li {
+    width: 20%;
+    height: 360px;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+}
+
+.socials__logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+    &:after {
+    content: "";
+    color: $blue;
+    font-family: FontAwesome;
+    font-size: 100px;
+    font-weight: 400;
+  }
+}
+
+.socials__logo_tw {
+  &:after {
+    content: "\f099";
+  }
+}
+
+.socials__logo_fb {
+  &:after {
+    content: "\f09a";
+  }
+}
+
+.socials__logo_in {
+  &:after {
+    content: "\f0e1";
+  }
+}
+
+.socials__logo_gp {
+  &:after {
+    content: "\f0d5";
+  }
+}
+
+.socials__logo_pin {
+  &:after {
+    content: "\f231";
+  }
+}
+
+
+.socials__descr {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.socials__follow {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.socials__follow-text {
+  color: #fff;
+}
+
+.socials__follow-link {
+  color: $blue;
+}
+
+.slideshow-wrap input[type=radio] {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.slideshow-wrap label {
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  z-index: 100;
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.slideshow-wrap label:not(.arrows):active { bottom: -46px }
+
+.slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-color: #ccc; }
+
+.slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: #ccc; }
+
+.slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: #ccc; }
+
+.slideshow-wrap input[type=radio]#button-4:checked~label[for=button-4] { background-color: #ccc; }
+
+.slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: #ccc; }
+
+.slideshow-wrap label[for=button-1] { margin-left: -36px }
+
+.slideshow-wrap label[for=button-2] { margin-left: -18px }
+
+.slideshow-wrap label[for=button-4] { margin-left: 18px }
+
+.slideshow-wrap label[for=button-5] { margin-left: 36px }
+
+.slideshow-wrap input[type=radio]#button-1:checked~.slideshow-inner>.slideshow-list { left: 0 }
+
+.slideshow-wrap input[type=radio]#button-2:checked~.slideshow-inner>.slideshow-list { left: -100% }
+
+.slideshow-wrap input[type=radio]#button-3:checked~.slideshow-inner>.slideshow-list { left: -200% }
+
+.slideshow-wrap input[type=radio]#button-4:checked~.slideshow-inner>.slideshow-list { left: -300% }
+
+.slideshow-wrap input[type=radio]#button-5:checked~.slideshow-inner>.slideshow-list { left: -400% }
+

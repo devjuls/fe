@@ -8,7 +8,7 @@
 }
 
 .services__item {
-  @include gallery(2 of 4);
+  @include gallery(6 of 12);
   margin-bottom: gutter()*6;
 
 }
@@ -20,6 +20,7 @@
   background: $blue;
   transform: skewX(-7deg);
   position: relative;
+  margin-left: 15px;
 
   &:after {
     position: absolute;
@@ -75,7 +76,6 @@
 
 .services__info {
   @include span(4 of 6 last);
-
 }
 
 .services__title {
@@ -91,7 +91,7 @@
 }
 
 .facts__list {
-  @include full;
+  @extend %clearfix;
   padding-top: 35px;
   padding-bottom: 35px;
   border: 1px solid #ccc;

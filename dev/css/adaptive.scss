@@ -1,16 +1,18 @@
 ///adaptive
 
-@include desktop { ///desktop 1200
+//////////desktop 1200
+
+@include desktop {
 
   .work__info {
     font-size: 1em;
   }
-
 }
 
 
+//////////laptops 992
 
-@include laptop { ///laptops 992
+@include laptop {
 
   .container {
     width: 100%;
@@ -87,7 +89,10 @@
 
 }
 
-@include tablets { ///tablets 768
+
+//////////tablets 768
+
+@include tablets {
 
   //header
 
@@ -155,15 +160,24 @@
   }
 
 
-  //testimonials
+  //contacts
 
-  .tech__list li {
-    // @include gallery(6);
+  .contacts__form {
+    @include span(12);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .contacts__info {
+    @include span(12);
   }
 
 }
 
-@include phones { ///phones 568
+
+//////////phones 568
+
+@include phones {
 
   //header
 
@@ -308,7 +322,9 @@
 
 }
 
-@include xs-phones { ///xs-phones 480
+
+//////////xs-phones 480
+@include xs-phones {
 
   //services
 
@@ -364,6 +380,15 @@
 
   .socials__follow {
     font-size: 20px;
+  }
+
+
+  //contacts
+
+  .contacts__form {
+    & input[name="name"], & input[name="email"] {
+      width: 100%;
+    }
   }
 
 }

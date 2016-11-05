@@ -1,0 +1,157 @@
+//section Contacts
+
+.contacts {
+  margin-bottom: 100px;
+}
+
+.contacts__form {
+  @include span(7);
+}
+
+.contacts__info {
+  @include span(5 last);
+  padding-left: 20px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts__form {
+  & input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    color: #666;
+
+    &:active, &:focus {
+      border: 1px solid $blue;
+    }
+  }
+
+  & input[name="name"] {
+    display: block;
+    width: 49%;
+    float: left;
+  }
+
+  & input[name="email"] {
+    display: block;
+    width: 49%;
+    float: right;
+  }
+
+  & input[name="subject"] {
+    display: block;
+    width: 100%;
+  }
+
+  & textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  button[type="submit"] {
+    background-color: $blue;
+    border-radius: 4px;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: $orange;
+    }
+
+    &:active, &:focus {
+      border: 1px solid $orange;
+    }
+  }
+
+    &::-webkit-input-placeholder{
+      color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+    &::-moz-placeholder{
+      color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    }
+}
+
+
+
+.contacts__title {
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contacts__address {
+  margin-bottom: 15px;
+
+  &:before {
+    content: "\f041";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    width: 45px;
+    text-align: center;
+  }
+}
+
+.contacts__phone {
+  margin-bottom: 15px;
+
+  &:before {
+    content: "\f095";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    width: 45px;
+    text-align: center;
+  }
+}
+
+.contacts__email {
+  margin-bottom: 15px;
+
+  &:before {
+    content: "\f0e0";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    width: 45px;
+    text-align: center;
+  }
+}
+
+.contacts__hours {
+  margin-bottom: 15px;
+
+  &:before {
+    display: inline-block;
+    content: "\f017";
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    width: 45px;
+    text-align: center;
+  }
+}
+
+.contacts__descr {
+  margin-bottom: 40px;
+}
+

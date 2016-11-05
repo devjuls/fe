@@ -1,0 +1,52 @@
+//section Testimonials
+
+.tech__list {
+  @extend %clearfix;
+
+  & li {
+    @include gallery(3);
+    text-align: center;
+    margin-bottom: gutter()*4;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+.clients__list {
+  @extend %clearfix;
+}
+
+.clients__item {
+  @include gallery(4);
+  margin-bottom: gutter()*4;
+  padding: 15px 10px;
+  background-color: #f7f7f7;
+}
+
+.clients__photo {
+  float: left;
+  margin-right: 12px;
+}
+
+.clients__testimonial {
+  color: #999;
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 45px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #999;
+}
+
+.clients__name {
+  font-size: 14px;
+  font-weight: 400;
+  color: $blue;
+}
+
+.clients__descr {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}

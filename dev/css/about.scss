@@ -10,7 +10,7 @@
 }
 
 .section__title-wrap {
-  @include span(3);
+  @include span(4);
 }
 
 .section__title {
@@ -35,7 +35,7 @@
 }
 
 .section__descr {
-  @include span(8 last);
+  @include span(7 last);
   padding-top: 50px;
   position: relative;
 

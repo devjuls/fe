@@ -6,10 +6,6 @@
     font-size: 1em;
   }
 
-
-
-
-
 }
 
 
@@ -76,6 +72,19 @@
     font-size: 1em;
   }
 
+
+  //prices
+
+  .prices__list {
+    width: span(10);
+    margin-left: span(1 wide);
+  }
+
+  .prices__item {
+    @include gallery(6);
+    margin-bottom: gutter()*4;
+  }
+
 }
 
 @include tablets { ///tablets 768
@@ -135,6 +144,21 @@
 
   .work__link {
     font-size: 1em;
+  }
+
+
+  //prices
+
+  .prices__list {
+    width: span(12);
+    margin: auto;
+  }
+
+
+  //testimonials
+
+  .tech__list li {
+    // @include gallery(6);
   }
 
 }
@@ -240,6 +264,46 @@
 
   .work__link {
     font-size: 0.8em;
+  }
+
+
+  //prices
+
+  .prices__list {
+    width: span(10);
+    margin-left: span(1 wide);
+  }
+
+  .prices__item {
+    @include gallery(10 of 10);
+
+    &:nth-child(n) {
+    clear: both;
+    }
+  }
+
+
+  //testimonials
+
+  .tech__list {
+    margin-bottom: 30px;
+
+    & li {
+      @include gallery(6);
+    }
+  }
+
+  .clients__list {
+    width: span(8);
+    margin-left: span(2 wide);
+  }
+
+  .clients__item {
+    @include gallery(8 of 8);
+
+    &:nth-child(n) {
+    clear: both;
+    }
   }
 
 }

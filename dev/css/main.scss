@@ -1,6 +1,4 @@
 /*vars*/
-$container-width: 960px;
-$footer-height: 125px;
 
 $susy: (columns: 12,
   gutters: 0.25,
@@ -8,25 +6,20 @@ $susy: (columns: 12,
   global-box-sizing: border-box,
   output: float,
   container: 960px,
-  // gutter-position: split,
 
   debug: (
-    image: show-columns,
+    image: hide,
     color: rgba(#66f, .25), // менять цвет у колонок
     output: overlay, // есть еще вариант overlay, в котором колонки показываются только при наведении
     toggle: top right, // положение переключателя для показа оверлея
   ),
 );
 
-$tablets-layout: layout(6 .2 fluid float);
-
 /*colors*/
 $bg-color: #eee;
 $grey: #666;
 $blue: #0cf;
 $orange: #f90;
-
-
 
 
 /*layout*/

@@ -226,6 +226,7 @@
 
   .skills__item {
     @include gallery(10 of 11);
+    padding-bottom: 25px;
   }
 
   .tilted {
@@ -248,6 +249,7 @@
 
   .team__item {
     @include gallery (10 of 10);
+    padding-bottom: 25px;
 
     &:nth-child(n) {
       clear: both;
@@ -367,7 +369,7 @@
   }
 
   .work__link {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
 
@@ -375,11 +377,30 @@
 
   .socials__descr {
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .socials__logo {
+    margin-bottom: 40px;
   }
 
   .socials__follow {
     font-size: 20px;
+  }
+
+  //testimonials
+
+  .clients__list {
+    width: span(10);
+    margin-left: span(1 wide);
+  }
+
+  .clients__item {
+    @include gallery(10 of 10);
+
+    &:nth-child(n) {
+    clear: both;
+    }
   }
 
 
@@ -388,6 +409,15 @@
   .contacts__form {
     & input[name="name"], & input[name="email"] {
       width: 100%;
+    }
+  }
+
+
+  //footer
+
+  .social-links__item {
+    &:after {
+      font-size: 25px;
     }
   }
 

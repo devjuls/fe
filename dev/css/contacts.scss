@@ -4,10 +4,6 @@
   margin-bottom: 100px;
 }
 
-.contacts__form {
-  @include span(7);
-}
-
 .contacts__info {
   @include span(5 last);
   padding-left: 20px;
@@ -17,6 +13,8 @@
 }
 
 .contacts__form {
+  @include span(7);
+
   & input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -52,7 +50,7 @@
     margin-bottom: 20px;
   }
 
-  button[type="submit"] {
+  & button[type="submit"] {
     background-color: $blue;
     border-radius: 4px;
     padding: 15px 25px;
